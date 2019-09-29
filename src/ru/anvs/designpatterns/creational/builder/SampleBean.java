@@ -23,22 +23,22 @@ public class SampleBean {
  
     }
 
-    public SampleBeanBuilder beanName(final String name) {
+    public SampleBeanBuilder initBeanName(final String name) {
       this.beanName = name;
       return this;
     }
 
-    public SampleBeanBuilder field1(final String f1) {
+    public SampleBeanBuilder initField1(final String f1) {
       this.field1 = f1;
       return this;
     }
     
-    public SampleBeanBuilder field2(final String f2) {
+    public SampleBeanBuilder initField2(final String f2) {
       this.field2 = f2;
       return this;
     }
     
-    public SampleBeanBuilder field3(final String f3) {
+    public SampleBeanBuilder initField3(final String f3) {
       this.field3 = f3;
       return this;
     }

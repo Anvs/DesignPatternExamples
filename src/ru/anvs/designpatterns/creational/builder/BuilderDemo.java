@@ -13,7 +13,13 @@ public class BuilderDemo {
          * Instead of constructor calling, SampleBean instance is created by using Builder instance.
          * It`s more useful in case of many parameters in constructor.
          */
-        demo = new SampleBean.SampleBeanBuilder().beanName("test bean ").field1("v_1 ").field2("v_2 ").field3("v_3 ").build();
+        demo = new SampleBean.SampleBeanBuilder()
+        		.initBeanName("test bean ")
+        		.initField1("v_1 ")
+        		.initField2("v_2 ")
+        		//.field3("v_3 ")
+        		.build();
+        
         System.out.println(demo.toString());
     }
 }
